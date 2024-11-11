@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <!--    <script src="js/bootstrap.min.js"></script>-->
+<!--    <script src="js/bootstrap.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -27,10 +27,185 @@
 </head>
 
 <body>
-<h1 class="text-center my-5 mx-3">Site under construction...</h1>
-<div class="growing" id="growing"></div>
+<a onclick="topFunction()" id="toTop" aria-label="Go to top"><i class="fa-solid fa-angle-up"></i>
+</a>
+<!--Menu-->
+<div class="menu-wrapper">
+    <a href="" aria-label="click on logo to go back to top"><img src="assets/favicon.png" alt="FA Logo"></a>
+    <div class="mega-menu">
+        <div class="menu-item">
+            <a href="#professional">Professional Life</a>
+            <ul>
+                <a href="#experience">Experience</a>
+                <a href="#work-projects">Projects</a>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <a href="#academics">Academics</a>
+            <ul>
+                <a href="#coursework">Coursework</a>
+                <a href="#awards">Awards</a>
+                <a href="#school-projects">Projects</a>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <a href="#leadership">Leadership</a>
+            <ul>
+                <a href="#sports">Sports</a>
+                <a href="#acaedmics-leadership">Academics</a>
+                <a href="#social-leadership">Social</a>
+            </ul>
+        </div>
+    </div>
+    <a aria-label="open and close hamburger menu" class="hamburger-toggle"><i class="fa-solid fa-bars"></i></a>
+    <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+            <div class="menu-item">
+                <a href="#professional">Professional Life</a>
+                <ul>
+                    <a href="#experience">Experience</a>
+                    <a href="#work-projects">Projects</a>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <a href="#academics">Academics</a>
+                <ul>
+                    <a href="#coursework">Coursework</a>
+                    <a href="#awards">Awards</a>
+                    <a href="#school-projects">Projects</a>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <a href="#leadership">Leadership</a>
+                <ul>
+                    <a href="#sports">Sports</a>
+                    <a href="#acaedmics-leadership">Academics</a>
+                    <a href="#academics-leadership">Social</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-
+<div class="fixed-width-wrapper intro py-3 my-5">
+    <div class="align-items-center text-center">
+        <figure>
+            <img src="assets/images/headshot.jpeg" alt="Marco Kleimans headshot">
+        </figure>
+        <h1 class="text-center">Hello! I'm Facu <i class="fa-solid fa-hand-peace"></i></h1>
+        <p>I'm passionate about data science and industrial engineering, currently pursuing a Professional Master's in 
+            Data Science at <a href="https://www.rice.edu/" target="_blank">Rice University</a>, where I also work as a 
+            Graduate Teaching Assistant for COMP614 Programming for Data Science. </p>
+        <p>My past roles include Operations Manager at <a href="https://www.circclo.com/" target="_blank">CIRCCLO</a>, 
+            a social enterprise focused on circular economy and social inclusion, and Junior Data Scientist at 
+            <a href="https://www.linkedin.com/company/wais-data/" target="_blank">Wais</a>, where I applied my expertise in Python, 
+            project management, data analysis, and process optimization to create impactful solutions.</p>
+        <a href="https://www.linkedin.com/in/facundo-arredondo-/" aria-label="link to LinkedIin" target="_blank"><i
+            class="fa-brands fa-linkedin fa-2x me-3"></i></a>
+        <a href="mailto:fa32@rice.edu" aria-label="link to Gmail" target="_blank"><i
+                class="fa-solid fa-envelope fa-2x"></i></a>
+    </div>
+</div>
+<div class="fixed-width-wrapper my-5 py-3">
+    <h2 id="professional">Professional Life</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam possimus numquam illum expedita asperiores earum non, dolore maxime aliquid dolorum nostrum ipsum labore beatae laborum corporis ratione fugiat esse quisquam?</p>
+    <p>Commodi delectus, voluptas at nihil ducimus voluptate error? Nihil commodi, illum veritatis sit voluptas nesciunt magni ipsum laborum nostrum voluptatibus pariatur praesentium esse expedita non! Eius reprehenderit dolorem qui non.</p>
+    <p>Culpa eum adipisci exercitationem dicta id commodi blanditiis vitae modi dolor officiis iure, quidem optio, odio ullam expedita eius laudantium earum, dolores itaque ratione aspernatur accusamus provident. Fuga, est commodi!</p>
+    <h3 id="experience">Experience</h3>
+    <div class="row gy-4 mb-5">
+        <div class="col-md-6 col-12">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <div class="row card-title mb-2">
+                        <div class="col-sm-6 col-12 order-1 order-sm-1"><h4>RICE UNIVERSITY</h4></div>
+                        <div class="col-sm-6 col-12 text-sm-end order-3 order-sm-2"><h4>Houston, USA</h4></div>
+                        <div class="col-sm-6 col-12 order-2 order-sm-3"><h5>Research Assistant</h5></div>
+                        <div class="col-sm-6 col-12 text-sm-end order-4 order-sm-4"><h5>Aug 2022 – Aug 2024</h5></div>
+                        <i class="fa-solid fa-circle" style="color: #48e5c3;"></i>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laudantium voluptas perspiciatis dolores nesciunt veritatis rerum, amet sapiente ut esse repellendus! Expedita eligendi voluptatum itaque tempore explicabo illum impedit quod?</p>
+                        <p>Doloribus corporis, numquam optio laborum, esse possimus repudiandae maiores unde deleniti ut praesentium, officiis saepe eos! Doloremque voluptatem iusto omnis odit maxime tempore ex sapiente. Quae porro dolorem iusto a?</p>
+                        <p>Quasi modi ducimus laborum a doloremque numquam exercitationem quae odit, officiis consequatur tenetur, cumque culpa vel enim! Deleniti rem, quos eaque excepturi eius, facilis pariatur saepe aspernatur sit nam ipsam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <div class="row card-title mb-2">
+                        <div class="col-sm-6 col-12 order-1 order-sm-1"><h4>RICE UNIVERSITY</h4></div>
+                        <div class="col-sm-6 col-12 text-sm-end order-3 order-sm-2"><h4>Houston, USA</h4></div>
+                        <div class="col-sm-6 col-12 order-2 order-sm-3"><h5>Research Assistant</h5></div>
+                        <div class="col-sm-6 col-12 text-sm-end order-4 order-sm-4"><h5>Aug 2022 – Aug 2024</h5></div>
+                        <i class="fa-solid fa-circle" style="color: #48e5c3;"></i>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laudantium voluptas perspiciatis dolores nesciunt veritatis rerum, amet sapiente ut esse repellendus! Expedita eligendi voluptatum itaque tempore explicabo illum impedit quod?</p>
+                        <p>Doloribus corporis, numquam optio laborum, esse possimus repudiandae maiores unde deleniti ut praesentium, officiis saepe eos! Doloremque voluptatem iusto omnis odit maxime tempore ex sapiente. Quae porro dolorem iusto a?</p>
+                        <p>Quasi modi ducimus laborum a doloremque numquam exercitationem quae odit, officiis consequatur tenetur, cumque culpa vel enim! Deleniti rem, quos eaque excepturi eius, facilis pariatur saepe aspernatur sit nam ipsam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <div class="row card-title mb-2">
+                        <div class="col-sm-6 col-12 order-1 order-sm-1"><h4>RICE UNIVERSITY</h4></div>
+                        <div class="col-sm-6 col-12 text-sm-end order-3 order-sm-2"><h4>Houston, USA</h4></div>
+                        <div class="col-sm-6 col-12 order-2 order-sm-3"><h5>Research Assistant</h5></div>
+                        <div class="col-sm-6 col-12 text-sm-end order-4 order-sm-4"><h5>Aug 2022 – Aug 2024</h5></div>
+                        <i class="fa-solid fa-circle" style="color: #48e5c3;"></i>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laudantium voluptas perspiciatis dolores nesciunt veritatis rerum, amet sapiente ut esse repellendus! Expedita eligendi voluptatum itaque tempore explicabo illum impedit quod?</p>
+                        <p>Doloribus corporis, numquam optio laborum, esse possimus repudiandae maiores unde deleniti ut praesentium, officiis saepe eos! Doloremque voluptatem iusto omnis odit maxime tempore ex sapiente. Quae porro dolorem iusto a?</p>
+                        <p>Quasi modi ducimus laborum a doloremque numquam exercitationem quae odit, officiis consequatur tenetur, cumque culpa vel enim! Deleniti rem, quos eaque excepturi eius, facilis pariatur saepe aspernatur sit nam ipsam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <div class="row card-title mb-2">
+                        <div class="col-sm-6 col-12 order-1 order-sm-1"><h4>RICE UNIVERSITY</h4></div>
+                        <div class="col-sm-6 col-12 text-sm-end order-3 order-sm-2"><h4>Houston, USA</h4></div>
+                        <div class="col-sm-6 col-12 order-2 order-sm-3"><h5>Research Assistant</h5></div>
+                        <div class="col-sm-6 col-12 text-sm-end order-4 order-sm-4"><h5>Aug 2022 – Aug 2024</h5></div>
+                        <i class="fa-solid fa-circle" style="color: #48e5c3;"></i>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laudantium voluptas perspiciatis dolores nesciunt veritatis rerum, amet sapiente ut esse repellendus! Expedita eligendi voluptatum itaque tempore explicabo illum impedit quod?</p>
+                        <p>Doloribus corporis, numquam optio laborum, esse possimus repudiandae maiores unde deleniti ut praesentium, officiis saepe eos! Doloremque voluptatem iusto omnis odit maxime tempore ex sapiente. Quae porro dolorem iusto a?</p>
+                        <p>Quasi modi ducimus laborum a doloremque numquam exercitationem quae odit, officiis consequatur tenetur, cumque culpa vel enim! Deleniti rem, quos eaque excepturi eius, facilis pariatur saepe aspernatur sit nam ipsam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 id="work-projects">Projects</h3>
+</div>
+<div class="fixed-width-wrapper my-5 py-3">
+    <h2 id="academics">Academics</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam possimus numquam illum expedita asperiores earum non, dolore maxime aliquid dolorum nostrum ipsum labore beatae laborum corporis ratione fugiat esse quisquam?</p>
+    <p>Commodi delectus, voluptas at nihil ducimus voluptate error? Nihil commodi, illum veritatis sit voluptas nesciunt magni ipsum laborum nostrum voluptatibus pariatur praesentium esse expedita non! Eius reprehenderit dolorem qui non.</p>
+    <p>Culpa eum adipisci exercitationem dicta id commodi blanditiis vitae modi dolor officiis iure, quidem optio, odio ullam expedita eius laudantium earum, dolores itaque ratione aspernatur accusamus provident. Fuga, est commodi!</p>
+    <h3 id="coursework">Coursework</h3>
+    <h3 id="awards">Awards</h3>
+    <h3 id="school-projects">Projects</h3>
+</div>
+<div class="fixed-width-wrapper my-5 py-3">
+    <h2 id="leadership">Leadership</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam possimus numquam illum expedita asperiores earum non, dolore maxime aliquid dolorum nostrum ipsum labore beatae laborum corporis ratione fugiat esse quisquam?</p>
+    <p>Commodi delectus, voluptas at nihil ducimus voluptate error? Nihil commodi, illum veritatis sit voluptas nesciunt magni ipsum laborum nostrum voluptatibus pariatur praesentium esse expedita non! Eius reprehenderit dolorem qui non.</p>
+    <p>Culpa eum adipisci exercitationem dicta id commodi blanditiis vitae modi dolor officiis iure, quidem optio, odio ullam expedita eius laudantium earum, dolores itaque ratione aspernatur accusamus provident. Fuga, est commodi!</p>
+    <h3 id="sports">Sports</h3>
+    <h3 id="acaedmics-leadership">Academics</h3>
+    <h3 id="social-leadership">Social</h3>
+</div>
 </body>
 
 </html>
