@@ -42,6 +42,22 @@ $(document).ready(function() {
     hamburgerMenuItem.on('click', function() {
         $('.hamburger-menu-container').removeClass('open');
     });
+    /***************
+     HAMBURGER SUBMENU TOGGLE
+     ******************/
+
+     $('.menu-item > i').click(function(e){
+        e.preventDefault();
+
+        const submenu = $(this).next('ul');
+        submenu.toggleClass('open');
+
+        const icon = $(this);
+        icon.toggleClass('fa-angle-down fa-angle-up');
+
+        // $('.menu-item > ul').not(submenu).hide();
+        $('.menu-item > a i').not(icon).removeClass('fa-angle-up').addClass('fa-angle-down');
+    });
 
     /*********
     FADE IN EFFECT

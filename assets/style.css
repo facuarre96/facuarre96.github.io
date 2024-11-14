@@ -371,14 +371,16 @@ SPECIFIC THEME ELEMENTS
     .mega-menu{
         display: none;
     }
-    .hamburger-menu-container{
+    .hamburger-menu-container,
+    .hamburger-menu-container .menu-item ul{
         max-height: 0;
         overflow: hidden;
         opacity: 0;
         visibility: hidden;
         transition: max-height 0.5s ease, opacity 1s ease, visibility 1s linear 1s;
     }
-    .hamburger-menu-container.open{
+    .hamburger-menu-container.open,
+    .hamburger-menu-container .menu-item ul.open{
         max-height: 500px;
         opacity: 1;
         visibility: visible;
@@ -395,10 +397,26 @@ SPECIFIC THEME ELEMENTS
     }
     .hamburger-menu a{
         text-decoration: none;
-        padding: 5px 20px;
+    }
+    .hamburger-menu a:not(ul a){
+        margin: 0 20px;
     }
     .hamburger-menu a:active{
-        background: var(--springwater);
+        background: var(--turquoise);
+        color: var(--dark);
+    }
+    .hamburger-menu .menu-item {
+        margin-bottom: 10px;
+    }
+    .hamburger-menu ul{
+        margin: 0;
+        padding: 10px 20px;
+    }
+    .hamburger-menu ul a{
+        display: block;
+        background-color: var(--charcoal);
+        margin: 0;
+        padding: 5px 20px;
     }
     .fa-solid.fa-bars{
         display: inline-block;
