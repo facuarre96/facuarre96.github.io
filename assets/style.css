@@ -141,19 +141,6 @@ footer a:hover{
     color: #c8c8c8;
 }
 /*********
-SPECIAL ANIMATION
-**********/
-.fade-in-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-.fade-in-section.visible{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/*********
 THEME - FULL SCREEN
 **********/
 /*
@@ -262,28 +249,16 @@ SPECIFIC THEME ELEMENTS
 .intro figure img{
     width: 300px;
 }
-dt a{
-    color: var(--baby-powder);
-}
-dt a:hover{
-    color: var(--baby-powder-light);
-}
-.fixed-width-wrapper .qr-codes figure{
-    max-width: 150px;
-    display: block;
-    margin: auto;
-}
-.fixed-width-wrapper .qr-codes a:hover img{
-    transform: scale(1.05);
-}
 .card{
     background-color: var(--charcoal-light);
 }
+.card-text{
+    border-top: 1px solid var(--turquoise);
+}
 .card h5{
     color: var(--seasalt);
-    border-bottom: 1px solid var(--turquoise);
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .card ul{
     margin: 0;
