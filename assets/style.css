@@ -431,9 +431,9 @@ SPECIFIC THEME ELEMENTS
         top: 7px;
         left: 4%
     }
-    .fixed-width-wrapper,
-    .full-width-wrapper{
-        scroll-margin-top: 175px;
+    .fixed-width-wrapper h2,
+    .fixed-width-wrapper h3{
+        scroll-margin-top: 100px;
     }
     .fixed-width-wrapper figure img{
         width: 100%; height: 100%; object-fit: cover;
